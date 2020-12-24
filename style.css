@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/OpenSans-Regular.ttf") format("truetype")
+}
+
+* {
+  padding: 0;
+  margin: 0
+}
+
+body {
+  overflow: hidden
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+#container #main .links .border {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb
+}
+
+#container #main .links .border a {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: #0f0f0f
+}
+
+#container #main .links .border i {
+  color: #0f0f0f;
+  transition: color 0.2s
+}
+
+#container #main .links .border i:hover {
+  color: #707070;
+  transition: color 0.2s
+}
+
+#container #main .searchbar {
+  padding-bottom: 20px
+}
+
+#container #main .searchbar input {
+  width: 268.81px;
+  height: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 0;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #dbdbdb;
+  transition: border 0.2s
+}
+
+#container #main .searchbar input:focus {
+  outline: none;
+  border-bottom: 1px solid #979797;
+  border-top: 1px solid #979797;
+  transition: border 0.2s
+}
+
+/*#footer {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px
+}*/
