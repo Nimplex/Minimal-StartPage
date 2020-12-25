@@ -13,12 +13,16 @@ body {
 }
 
 #container {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+#main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  min-height: 100vh;
+  height: calc(100vh - 20px);
 }
 
 #container #main .links .border {
@@ -72,8 +76,8 @@ body {
   transition: border 0.2s
 }
 
-/*#footer {
+footer {
   text-align: center;
   font-family: "Open Sans";
-  font-size: 14px
-}*/
+  font-size: 14px;
+}
