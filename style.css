@@ -80,4 +80,17 @@ footer {
   text-align: center;
   font-family: "Open Sans";
   font-size: 14px;
+  color: #707070;
+  opacity: 50%;
+  transition: opacity 0.2s;
+}
+
+footer i {
+  color: rgb(255, 84, 84);
+  transition: opacity 0.2s;
+}
+
+footer:hover {
+  opacity: 100%;
+  transition: opacity 0.2s;
 }
