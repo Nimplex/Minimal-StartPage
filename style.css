@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 20px);
+  height: calc(100vh - 30px);
 }
 
 #container #main .links {
