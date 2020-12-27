@@ -25,6 +25,11 @@ body {
   height: calc(100vh - 20px);
 }
 
+#container #main .links {
+  width: 30vh;
+  text-align: center;
+}
+
 #container #main .links .border {
   width: 100%;
   padding-top: 10px;
@@ -37,7 +42,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 30px;
-  color: #0f0f0f
+  color: #0f0f0f;
 }
 
 #container #main .links .border i {
@@ -55,7 +60,7 @@ body {
 }
 
 #container #main .searchbar input {
-  width: 268.81px;
+  width: 30vh;
   height: 30px;
   padding-bottom: 10px;
   padding-top: 10px;
