@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("./assets/OpenSans-Regular.ttf") format("truetype")
+  src: url("./assets/OpenSans-Regular.ttf") format("truetype");
 }
 
 * {
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 
 body {
-  overflow: hidden
+  overflow: hidden;
 }
 
 #container {
@@ -25,9 +25,37 @@ body {
   height: calc(100vh - 30px);
 }
 
+@media only screen and (min-width: 750px) {
+  #container #main .links {
+    width: 40vw;
+    max-width: 280px;
+  }
+  #container #main .searchbar input {
+    width: 40vw;
+    max-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #container #main .links {
+    width: 50vw;
+    max-width: 280px;
+  }
+  #container #main .searchbar input {
+    width: 50vw;
+    max-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #container #main .links * {
+    display: none;
+  }
+}
+
 #container #main .links {
-  width: 30vh;
   text-align: center;
+  transition: width 0.15s;
 }
 
 #container #main .links .border {
@@ -35,7 +63,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #dbdbdb;
-  border-top: 1px solid #dbdbdb
+  border-top: 1px solid #dbdbdb;
 }
 
 #container #main .links .border a {
@@ -47,20 +75,19 @@ body {
 
 #container #main .links .border i {
   color: #0f0f0f;
-  transition: color 0.2s
+  transition: color 0.2s;
 }
 
 #container #main .links .border i:hover {
   color: #707070;
-  transition: color 0.2s
+  transition: color 0.2s;
 }
 
 #container #main .searchbar {
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 #container #main .searchbar input {
-  width: 30vh;
   height: 30px;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -71,14 +98,15 @@ body {
   text-align: center;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
-  transition: border 0.2s
+  transition: border 0.2s;
+  transition: width 0.15s;
 }
 
 #container #main .searchbar input:focus {
   outline: none;
   border-bottom: 1px solid #979797;
   border-top: 1px solid #979797;
-  transition: border 0.2s
+  transition: border 0.2s;
 }
 
 footer {
