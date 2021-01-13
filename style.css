@@ -43,7 +43,6 @@ body {
 
 #container #main .links {
   text-align: center;
-  transition: width 0.15s;
 }
 
 #container #main .links .border {
@@ -87,7 +86,6 @@ body {
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
   transition: border 0.2s;
-  transition: width 0.15s;
 }
 
 #container #main .searchbar input:focus {
