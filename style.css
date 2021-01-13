@@ -10,6 +10,28 @@
 
 body {
   overflow: hidden;
+  background: var(--color-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-bg: #171718;
+    --color-fg-1: #bababa;
+    --color-fg-2: #a0a0a0;
+    --color-fg-1-hover: #e3e3e3;
+    --color-border: #2f2f2f;
+    --color-border-hover: #5a5a5a;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    --color-bg: #fff;
+    --color-fg-1: #0f0f0f;
+    --color-fg-2: #757575;
+    --color-fg-1-hover: #707070;
+    --color-border: #dbdbdb;
+    --color-border-hover: #979797;
+  }
 }
 
 #container {
@@ -33,6 +55,7 @@ body {
 #container #main .searchbar input {
   width: 50vw;
   max-width: 280px;
+  background: var(--color-bg);
 }
 
 @media only screen and (max-width: 600px) {
@@ -50,25 +73,24 @@ body {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #dbdbdb;
-  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
 }
 
 #container #main .links .border a {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 30px;
-  color: #0f0f0f;
+  color: var(--color-fg-1);
 }
 
 #container #main .links .border i {
-  color: #0f0f0f;
-  transition: color 0.2s;
+  color: var(--color-fg-1);
+  transition: color .2s ease-in-out;
 }
 
 #container #main .links .border i:hover {
-  color: #707070;
-  transition: color 0.2s;
+  color: var(--color-fg-1-hover);
 }
 
 #container #main .searchbar {
@@ -84,17 +106,21 @@ body {
   font-family: "Open Sans";
   font-size: 18px;
   text-align: center;
-  border-bottom: 1px solid #dbdbdb;
-  border-top: 1px solid #dbdbdb;
-  transition: border 0.2s;
-  transition: width 0.15s;
+  color: var(--color-fg-1);
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+  transition: border-color .4s ease-out;
+}
+
+#container #main .searchbar input::placeholder {
+  color: var(--color-fg-2);
+}
 }
 
 #container #main .searchbar input:focus {
   outline: none;
-  border-bottom: 1px solid #979797;
-  border-top: 1px solid #979797;
-  transition: border 0.2s;
+  border-bottom: 1px solid var(--color-border-hover);
+  border-top: 1px solid var(--color-border-hover);
 }
 
 footer {
