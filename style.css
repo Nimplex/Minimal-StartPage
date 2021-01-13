@@ -15,7 +15,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    --color-bg: #171718;
+    --color-bg: #0d1117;
     --color-fg-1: #bababa;
     --color-fg-2: #a0a0a0;
     --color-fg-1-hover: #e3e3e3;
