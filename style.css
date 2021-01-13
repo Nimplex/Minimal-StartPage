@@ -114,7 +114,11 @@ body {
 
 #container #main .searchbar input::placeholder {
   color: var(--color-fg-2);
+  transition: opacity .26s ease-in-out;
 }
+
+#container #main .searchbar input:focus::placeholder {
+  opacity: 0;
 }
 
 #container #main .searchbar input:focus {
