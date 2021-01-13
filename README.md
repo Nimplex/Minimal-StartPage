@@ -1,5 +1,7 @@
 # Minimal-StartPage
-Minimalistic start page for chrome.
+Minimalistic start page for chrome.  
+Uses your system theme to choose between light- and darkmode.
+
 ## How to install
 ```json
 1. Download source code.
@@ -10,5 +12,7 @@ Minimalistic start page for chrome.
 6. Drag directory with source code to page.
 7. Done.
 ```
-## Screenshot
-![Screenshot](https://raw.githubusercontent.com/Nimplex/Minimal-StartPage/main/assets/StartPageScreenShot.png)
+
+## Screenshots
+![Screenshot Lightmode](assets/screenshot_light.png)
+![Screenshot Darkmode](assets/screenshot_dark.png)
