@@ -4,7 +4,7 @@
 
 ---
 
-<h2 align="center"><a href="/installation.md"> Installation </a> | <a href="https://nimplex.github.io/Minimal-StartPage/"> Website </a> | <a href="https://nimplex.xyz/contact"> Contact </a></h1>
+<h2 align="center"><a href="/Installation.md"> Installation </a> | <a href="https://nimplex.github.io/Minimal-StartPage/"> Website </a> | <a href="https://nimplex.xyz/contact"> Contact </a></h1>
 
 ---
 
