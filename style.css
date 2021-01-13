@@ -8,30 +8,40 @@
   margin: 0;
 }
 
-body {
-  overflow: hidden;
-  background: var(--color-bg);
-}
-
 @media (prefers-color-scheme: dark) {
-  body {
+  :root {
     --color-bg: #0d1117;
     --color-fg-1: #bababa;
     --color-fg-2: #a0a0a0;
     --color-fg-1-hover: #e3e3e3;
     --color-border: #2f2f2f;
     --color-border-hover: #5a5a5a;
+    --color-footer: #7e7e7e;
   }
 }
-@media (prefers-color-scheme: light) {
-  body {
+
+/*
+ * The negation of (prefers-color-scheme: dark) is used here,
+ * even though prefers-color-scheme defaults to light, because
+ * the values for that feature might be expanded in the future.
+ * Reference: 
+ * https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme
+ */
+@media (not prefers-color-scheme: dark) {
+  :root {
     --color-bg: #fff;
     --color-fg-1: #0f0f0f;
     --color-fg-2: #757575;
     --color-fg-1-hover: #707070;
     --color-border: #dbdbdb;
     --color-border-hover: #979797;
+    --color-footer: #707070;
   }
+}
+
+body {
+  overflow: hidden;
+  background: var(--color-bg);
 }
 
 #container {
@@ -66,7 +76,6 @@ body {
 
 #container #main .links {
   text-align: center;
-  transition: width 0.15s;
 }
 
 #container #main .links .border {
@@ -131,17 +140,15 @@ footer {
   text-align: center;
   font-family: "Open Sans";
   font-size: 14px;
-  color: #707070;
+  color: var(--color-footer);
   opacity: 50%;
   transition: opacity 0.2s;
 }
 
 footer i {
   color: rgb(255, 84, 84);
-  transition: opacity 0.2s;
 }
 
 footer:hover {
   opacity: 100%;
-  transition: opacity 0.2s;
 }
