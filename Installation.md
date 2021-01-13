@@ -1,6 +1,6 @@
 <h1 align="center"> Installation </h1>
 
-```perl
+```json
 1. Download source code.
 2. Extract code to one directory.
 3. Open chrome://extensions.
