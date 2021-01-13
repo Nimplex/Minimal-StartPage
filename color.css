@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #0d1117;
@@ -10,16 +14,9 @@
   }
 }
 
-/*
- * The negation of (prefers-color-scheme: dark) is used here,
- * even though prefers-color-scheme defaults to light, because
- * the values for that feature might be expanded in the future.
- * Reference: 
- * https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme
- */
-@media (not prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --color-bg: #fff;
+    --color-bg: #fefefe;
     --color-fg-1: #0f0f0f;
     --color-fg-2: #757575;
     --color-fg-1-hover: #707070;
