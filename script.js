@@ -3,7 +3,7 @@ const searchBox = document.getElementById('search')
 searchBox.addEventListener('keydown', (e) => {
   if (e.code == 'Enter') {
     const { value } = searchBox
-    if (value.replace(/ /gm, '').length > 0) location.href = `https://duckduckgo.com/?q=${value}`
+    if (value.replace(/ /gm, '').length > 0) location.href = `https://google.com/search?q=${value}`
     else searchBox.value = ''
   }
 })
