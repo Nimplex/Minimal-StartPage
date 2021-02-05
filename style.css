@@ -26,17 +26,6 @@ body {
   height: calc(100vh - 30px);
 }
 
-#container #main .links {
-  width: 50vw;
-  max-width: 280px;
-}
-
-#container #main .searchbar input {
-  width: 50vw;
-  max-width: 280px;
-  background: var(--color-bg);
-}
-
 @media only screen and (max-width: 600px) {
   #container #main .links * {
     display: none;
@@ -45,6 +34,8 @@ body {
 
 #container #main .links {
   text-align: center;
+  width: 50vw;
+  max-width: 280px;
 }
 
 #container #main .links .border {
@@ -77,6 +68,8 @@ body {
 
 #container #main .searchbar input {
   height: 30px;
+  width: 50vw;
+  max-width: 280px;
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 0;
@@ -85,6 +78,7 @@ body {
   font-size: 18px;
   text-align: center;
   color: var(--color-fg-1);
+  background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   border-top: 1px solid var(--color-border);
   transition: border-color .4s ease-out;
