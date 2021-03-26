@@ -1,12 +1,17 @@
 {
-  "manifest_version": 2,
-  "name": "Startpage",
-  "version": "1.0",
   "description": "Startpage",
+  "manifest_version": 2,
+  "name": "Minimalistic Startpage",
+  "web_accessible_resources": [
+    "index.html"
+  ],
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "permissions": [
-    "tabs"
-  ]
+  "permissions": ["tabs"],
+  "icons": {
+	  "16": "favicon.png",
+	  "48": "favicon.png"
+  },
+  "version": "2.1"
 }
