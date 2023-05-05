@@ -1,117 +1,117 @@
 @font-face {
-  font-family: "Open Sans";
-  src: url("./assets/OpenSans-Regular.ttf") format("truetype");
+	font-family: "Open Sans";
+	src: url("./assets/OpenSans-Regular.ttf") format("truetype");
 }
 
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 body {
-  overflow: hidden;
-  background: var(--color-bg);
+	overflow: hidden;
+	background: var(--color-bg);
 }
 
 #container {
-  height: 100vh;
-  min-height: 100vh;
+	height: 100vh;
+	min-height: 100vh;
 }
 
 #main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 30px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 30px);
 }
 
 @media only screen and (max-width: 600px) {
-  #container #main .links * {
-    display: none;
-  }
+	#container #main .links * {
+		display: none;
+	}
 }
 
 #container #main .links {
-  text-align: center;
-  width: 50vw;
-  max-width: 280px;
+	text-align: center;
+	width: 50vw;
+	max-width: 280px;
 }
 
 #container #main .links .border {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--color-border);
-  border-top: 1px solid var(--color-border);
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--color-border);
+	border-top: 1px solid var(--color-border);
 }
 
 #container #main .links .border a {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 30px;
-  color: var(--color-fg-1);
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 30px;
+	color: var(--color-fg-1);
 }
 
 #container #main .links .border i {
-  color: var(--color-fg-1);
-  transition: color .2s ease-in-out;
+	color: var(--color-fg-1);
+	transition: color 0.2s ease-in-out;
 }
 
 #container #main .links .border i:hover {
-  color: var(--color-fg-1-hover);
+	color: var(--color-fg-1-hover);
 }
 
 #container #main .searchbar {
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 #container #main .searchbar input {
-  height: 30px;
-  width: 50vw;
-  max-width: 280px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-radius: 0;
-  border: none;
-  font-family: "Open Sans";
-  font-size: 18px;
-  text-align: center;
-  color: var(--color-fg-1);
-  background: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
-  border-top: 1px solid var(--color-border);
-  transition: border-color .4s ease-out;
+	height: 30px;
+	width: 50vw;
+	max-width: 280px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 0;
+	border: none;
+	font-family: "Open Sans";
+	font-size: 18px;
+	text-align: center;
+	color: var(--color-fg-1);
+	background: var(--color-bg);
+	border-bottom: 1px solid var(--color-border);
+	border-top: 1px solid var(--color-border);
+	transition: border-color 0.4s ease-out;
 }
 
 #container #main .searchbar input::placeholder {
-  color: var(--color-fg-2);
-  transition: opacity .26s ease-in-out;
+	color: var(--color-fg-2);
+	transition: opacity 0.26s ease-in-out;
 }
 
 #container #main .searchbar input:focus::placeholder {
-  opacity: 0;
+	opacity: 0;
 }
 
 #container #main .searchbar input:focus {
-  outline: none;
-  border-bottom: 1px solid var(--color-border-hover);
-  border-top: 1px solid var(--color-border-hover);
+	outline: none;
+	border-bottom: 1px solid var(--color-border-hover);
+	border-top: 1px solid var(--color-border-hover);
 }
 
 footer {
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 14px;
-  color: var(--color-footer);
-  opacity: 50%;
-  transition: opacity 0.2s;
+	text-align: center;
+	font-family: "Open Sans";
+	font-size: 14px;
+	color: var(--color-footer);
+	opacity: 50%;
+	transition: opacity 0.2s;
 }
 
 footer i {
-  color: rgb(255, 84, 84);
+	color: rgb(255, 84, 84);
 }
 
 footer:hover {
-  opacity: 100%;
+	opacity: 100%;
 }
