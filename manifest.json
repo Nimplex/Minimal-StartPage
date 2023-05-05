@@ -1,17 +1,20 @@
 {
-  "description": "Startpage",
-  "manifest_version": 2,
-  "name": "Minimalistic Startpage",
-  "web_accessible_resources": [
-    "index.html"
-  ],
-  "chrome_url_overrides": {
-    "newtab": "index.html"
-  },
-  "permissions": ["tabs"],
-  "icons": {
-	  "16": "favicon.ico",
-	  "48": "favicon.ico"
-  },
-  "version": "2.1"
+	"description": "Startpage",
+	"manifest_version": 3,
+	"name": "Minimalistic Startpage",
+	"web_accessible_resources": [
+		{
+			"resources": ["index.html"],
+			"matches": ["*://*/*"]
+		}
+	],
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+	"permissions": ["tabs"],
+	"icons": {
+		"16": "favicon.ico",
+		"48": "favicon.ico"
+	},
+	"version": "2.2"
 }
