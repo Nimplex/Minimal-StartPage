@@ -10,6 +10,13 @@
 
 ---
 
+## Features
+
+- Search bar: type a query and press Enter to search on [Brave](https://search.brave.com).
+- Shortcuts to GitHub, X, Apple, LinkedIn and YouTube. These are hidden on screens narrower than 600px.
+- Follows your system theme and switches between light and dark mode.
+- Runs as a new-tab page in Chrome, or can be set as your homepage (see [Installation](/Installation.md)).
+
 <table>	
 	<tr>
 		<td align="center">	
