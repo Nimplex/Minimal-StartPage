@@ -9,4 +9,4 @@
 6. Drag directory with source code to page.
 7. Done.
 ```
-However, if you do not want to use the extension, you can also set your default homepage to the `https://nimplex.github.io/Minimal-StartPage`
+However, if you do not want to use the extension, you can also set your default homepage to the local file `index.html` in the extracted folder, for example `file:///path/to/Minimal-StartPage/index.html`.
