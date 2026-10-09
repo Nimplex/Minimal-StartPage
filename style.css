@@ -6,11 +6,13 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
 	overflow: hidden;
 	background: var(--color-bg);
+	font-family: "Open Sans", sans-serif;
 }
 
 #container {
@@ -26,55 +28,59 @@ body {
 	height: calc(100vh - 30px);
 }
 
-@media only screen and (max-width: 600px) {
-	#container #main .links * {
-		display: none;
-	}
-}
-
-#container #main .links {
+.social-links {
 	text-align: center;
 	width: 50vw;
 	max-width: 280px;
 }
 
-#container #main .links .border {
+.social-links-list {
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
 	border-bottom: 1px solid var(--color-border);
 	border-top: 1px solid var(--color-border);
 }
 
-#container #main .links .border a {
-	margin-left: 10px;
-	margin-right: 10px;
-	font-size: 30px;
-	color: var(--color-fg-1);
-}
-
-#container #main .links .border i {
+.social-links a {
+	display: grid;
+	place-items: center;
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
 	color: var(--color-fg-1);
 	transition: color 0.2s ease-in-out;
 }
 
-#container #main .links .border i:hover {
-	color: var(--color-fg-1-hover);
+.social-links svg {
+	width: 30px;
+	height: 30px;
+	fill: currentColor;
 }
 
-#container #main .searchbar {
+.social-links a:hover,
+.social-links a:focus-visible {
+	color: var(--color-fg-1-hover);
+	outline: none;
+}
+
+.social-links a:focus-visible {
+	box-shadow: 0 0 0 2px var(--color-border-hover);
+}
+
+.searchbar {
 	padding-bottom: 20px;
 }
 
-#container #main .searchbar input {
-	height: 30px;
+.searchbar input {
+	height: 50px;
 	width: 50vw;
 	max-width: 280px;
-	padding-bottom: 10px;
-	padding-top: 10px;
+	padding: 10px 0;
 	border-radius: 0;
 	border: none;
-	font-family: "Open Sans";
+	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
 	text-align: center;
 	color: var(--color-fg-1);
@@ -84,34 +90,45 @@ body {
 	transition: border-color 0.4s ease-out;
 }
 
-#container #main .searchbar input::placeholder {
+.searchbar input::placeholder {
 	color: var(--color-fg-2);
 	transition: opacity 0.26s ease-in-out;
 }
 
-#container #main .searchbar input:focus::placeholder {
+.searchbar input:focus::placeholder {
 	opacity: 0;
 }
 
-#container #main .searchbar input:focus {
+.searchbar input:focus {
 	outline: none;
-	border-bottom: 1px solid var(--color-border-hover);
-	border-top: 1px solid var(--color-border-hover);
+	border-bottom-color: var(--color-border-hover);
+	border-top-color: var(--color-border-hover);
 }
 
 footer {
 	text-align: center;
-	font-family: "Open Sans";
 	font-size: 14px;
 	color: var(--color-footer);
-	opacity: 50%;
+	opacity: 0.5;
 	transition: opacity 0.2s;
 }
 
-footer i {
+footer span {
 	color: rgb(255, 84, 84);
 }
 
 footer:hover {
-	opacity: 100%;
+	opacity: 1;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }

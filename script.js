@@ -1,9 +1,9 @@
 const searchBox = document.getElementById("search");
 
 searchBox.addEventListener("keydown", (e) => {
-	if (e.code == "Enter") {
+	if (e.key === "Enter") {
 		const { value } = searchBox;
-		if (value.replace(/ /gm, "").length > 0) location.href = `https://duckduckgo.com/?q=${value}`;
+		if (value.trim().length > 0) location.href = `https://duckduckgo.com/?q=${encodeURIComponent(value.trim())}`;
 		else searchBox.value = "";
 	}
 });

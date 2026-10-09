@@ -3,29 +3,39 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Startpage</title>
+		<title>Start Page</title>
 		<link rel="stylesheet" href="color.css" />
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 	<body class="preload">
 		<div id="container">
 			<div id="main">
 				<div class="searchbar">
-					<input id="search" type="text" placeholder="Search" />
+					<label class="sr-only" for="search">Search the web</label>
+					<input id="search" type="search" placeholder="Search the web" autocomplete="off" autofocus />
 				</div>
-				<div class="links">
-					<div class="border">
-						<a href="https://github.com/"><i class="fab fa-github"></i></a>
-						<a href="https://reddit.com/"><i class="fab fa-reddit"></i></a>
-						<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-						<a href="https://twitch.tv/"><i class="fab fa-twitch"></i></a>
-						<a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+				<div class="social-links">
+					<div class="social-links-list">
+						<a href="https://github.com/" aria-label="GitHub">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.84 2.8 1.31 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.76.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
+						</a>
+						<a href="https://reddit.com/" aria-label="Reddit">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 12.5c0-1.38-1.12-2.5-2.5-2.5-.68 0-1.29.27-1.74.71a9.6 9.6 0 0 0-4.6-1.47l.78-3.67 2.54.54a1.75 1.75 0 1 0 .19-.88l-2.85-.61a.46.46 0 0 0-.55.35l-.87 4.1a9.5 9.5 0 0 0-4.7 1.64A2.5 2.5 0 1 0 4.5 14.5c0 2.9 3.36 5.25 7.5 5.25s7.5-2.35 7.5-5.25c0-.14-.01-.27-.02-.4 1.16-.23 2.02-1.25 2.02-2.6ZM8.25 13.25A1.25 1.25 0 1 1 9.5 12a1.25 1.25 0 0 1-1.25 1.25Zm7.64 3.2c-.94.94-2.73 1.28-3.89 1.28s-2.95-.34-3.89-1.28a.45.45 0 1 1 .64-.64c.59.59 1.84.92 3.25.92s2.66-.33 3.25-.92a.45.45 0 1 1 .64.64Zm-.14-3.2A1.25 1.25 0 1 1 17 12a1.25 1.25 0 0 1-1.25 1.25Z"/></svg>
+						</a>
+						<a href="https://x.com/" aria-label="X">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.68l-8.04 9.19 9.46 12.31h-7.41l-5.8-7.58-6.63 7.58H1.82l8.6-9.83L1.35 2.25h7.6l5.24 6.93 6.05-6.93Zm-1.29 19.33h2.04L7.43 4.3H5.24l11.71 17.28Z"/></svg>
+						</a>
+						<a href="https://twitch.tv/" aria-label="Twitch">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2 2 6v14h5v3l3-3h4l6-6V2H4Zm14 11-3 3h-4l-2 2v-2H5V4h13v9Zm-8-6h2v5h-2V7Zm5 0h2v5h-2V7Z"/></svg>
+						</a>
+						<a href="https://youtube.com/" aria-label="YouTube">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+						</a>
 					</div>
 				</div>
 			</div>
-			<footer>Made with <i class="fa fa-heart"></i>, by Nimplex and Tim Greller</footer>
+			<footer>Made with <span aria-label="love">♥</span> by Nimplex and Tim Greller</footer>
 		</div>
 		<script src="script.js"></script>
 	</body>

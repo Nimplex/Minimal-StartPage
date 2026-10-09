@@ -1,8 +1,8 @@
 <h1 align="center">Minimal-StartPage</h1>
 <h2 align="center"><a href="https://www.codefactor.io/repository/github/nimplex/minimal-startpage/overview/main"><img src="https://www.codefactor.io/repository/github/nimplex/minimal-startpage/badge/main"/></a></h2>
 
-<p align="center"> Minimalistic start page for chrome. </br>
- Uses your system theme to choose between light- and darkmode. </p>
+<p align="center"> A minimal start page for Chrome. </br>
+ Uses your system theme to choose between light and dark mode. </p>
 
 ---
 

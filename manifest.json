@@ -1,7 +1,7 @@
 {
-	"description": "Startpage",
+	"description": "A minimal start page for your browser.",
 	"manifest_version": 3,
-	"name": "Minimalistic Startpage",
+	"name": "Minimal Start Page",
 	"web_accessible_resources": [
 		{
 			"resources": ["index.html"],

@@ -11,6 +11,8 @@
 		--color-border: #2f2f2f;
 		--color-border-hover: #5a5a5a;
 		--color-footer: #7e7e7e;
+		--color-surface: #161b22;
+		--color-focus: rgba(88, 166, 255, 0.28);
 	}
 }
 
@@ -23,5 +25,7 @@
 		--color-border: #dbdbdb;
 		--color-border-hover: #979797;
 		--color-footer: #707070;
+		--color-surface: #ffffff;
+		--color-focus: rgba(9, 105, 218, 0.16);
 	}
 }
