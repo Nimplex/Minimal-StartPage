@@ -12,7 +12,7 @@
 
 ## Features
 
-- Search bar: type a query and press Enter to search on [Brave](https://search.brave.com).
+- Search bar: type a query and press Enter to search. Click the engine name in the search bar to switch between Brave, Google and DuckDuckGo. Your choice is remembered in the browser.
 - Shortcuts to GitHub, X, Apple, LinkedIn and YouTube. These are hidden on screens narrower than 600px.
 - Follows your system theme and switches between light and dark mode.
 - Runs as a new-tab page in Chrome, or can be set as your homepage (see [Installation](/Installation.md)).

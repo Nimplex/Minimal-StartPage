@@ -63,7 +63,29 @@ body {
 }
 
 #container #main .searchbar {
+  position: relative;
   padding-bottom: 20px;
+}
+
+#container #main .searchbar #engine {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 52px;
+  padding: 0 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: var(--color-fg-2);
+  transition: color .2s ease-in-out;
+}
+
+#container #main .searchbar #engine:hover,
+#container #main .searchbar #engine:focus-visible {
+  color: var(--color-fg-1);
+  outline: none;
 }
 
 #container #main .searchbar input {
